@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:name="com.example.fragment.Fragment_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/btn_0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@mipmap/mian" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="主页"
+                android:layout_below="@+id/btn_0"
+                android:gravity="center"/>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+      <ImageView
+          android:id="@+id/btn_1"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:src="@mipmap/chengji1" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="成绩"
+           android:layout_below="@+id/btn_1"
+           android:gravity="center"/>
+    </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center">
+      <ImageView
+          android:id="@+id/btn_2"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:src="@mipmap/time1" />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="考试时间"
+             android:layout_below="@+id/btn_2"
+             android:gravity="center"/>
+      </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1">
+      <ImageView
+          android:id="@+id/btn_3"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:src="@mipmap/gonggao"
+          />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="教务公告"
+             android:layout_below="@+id/btn_3"
+             android:gravity="center"/>
+      </RelativeLayout>
+      <RelativeLayout
+
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1">
+      <ImageView
+          android:id="@+id/btn_4"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:src="@mipmap/me"
+          />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="我"
+             android:layout_below="@+id/btn_4"
+             android:gravity="center"/>
+      </RelativeLayout>
+
+   </LinearLayout>
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_gravity="start"
+       android:orientation="vertical"
+       android:background="@mipmap/leftbackground">
+       <WebView
+           android:id="@+id/web_1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+       </WebView>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="兴城天气"
+           android:textSize="16sp"
+           android:textColor="#000"/>
+       <TextView
+           android:padding="8dp"
+           android:id="@+id/left_text_tq"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text=""
+           android:textSize="15sp"
+           android:textColor="#000"
+           android:singleLine="false"/>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           >
+           <TextView
+               android:id="@+id/left_text_0"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="学籍信息："
+               android:textSize="20sp"
+               android:textColor="#000"
+               android:layout_marginLeft="10dp"
+
+               />
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center_horizontal"
+               android:layout_marginTop="20dp"
+               android:padding="10dp"
+               >
+               <TextView
+                   android:id="@+id/left_text1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="姓名："
+                   android:textSize="15sp"
+                   android:textColor="#000"/>
+               <TextView
+                   android:id="@+id/left_text2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="学院："
+                   android:textSize="15sp"
+                   android:textColor="#000"
+                   android:layout_below="@+id/left_text1"/>
+               <TextView
+                   android:id="@+id/left_text3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="籍贯："
+                   android:textSize="15sp"
+                   android:textColor="#000"
+                   android:layout_below="@+id/left_text2"/>
+               <TextView
+                   android:id="@+id/left_text4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="民族："
+                   android:textSize="15sp"
+                   android:textColor="#000"
+                   android:layout_below="@+id/left_text3"/>
+               <TextView
+                   android:id="@+id/left_text5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="政治面貌："
+                   android:textSize="15sp"
+                   android:textColor="#000"
+                   android:layout_below="@+id/left_text4"/>
+
+
+           </RelativeLayout>
+
+
+
+       </RelativeLayout>
+
+       <Button
+           android:id="@+id/left_btn1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#9588CFD8"
+           android:text="空教室查询"/>
+   </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

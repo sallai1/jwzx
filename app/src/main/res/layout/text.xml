@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="@mipmap/leftbackground">
+
+        <WebView
+            android:id="@+id/web_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+        </WebView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="兴城天气"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/left_text_tq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+       >
+       <TextView
+           android:id="@+id/left_text_0"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="学籍信息："
+           android:textSize="20sp"
+           android:textColor="#000"
+           android:layout_marginLeft="10dp"
+
+           />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            >
+            <TextView
+                android:id="@+id/left_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名：鼓励啊饿热啊啊尼格买提"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/left_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学院：软件学院"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_below="@+id/left_text1"/>
+            <TextView
+                android:id="@+id/left_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="籍贯：辽宁"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_below="@+id/left_text2"/>
+            <TextView
+                android:id="@+id/left_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="民族：汉族"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_below="@+id/left_text3"/>
+            <TextView
+                android:id="@+id/left_text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="政治面貌：中国共产主义青年团团员"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_below="@+id/left_text4"/>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp">
+        </ListView>
+    </LinearLayout>

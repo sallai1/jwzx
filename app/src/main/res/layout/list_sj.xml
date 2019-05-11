@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="8dp">
+     <ImageView
+         android:id="@+id/image_1"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:src="@mipmap/subject"
+         android:layout_marginTop="10dp"
+         />
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_1"
+            android:layout_alignTop="@+id/image_1"
+            android:layout_marginLeft="5dp"
+            android:text="科目："
+            android:textColor="#000000"
+            android:textSize="16sp"
+
+            />
+        <ImageView
+            android:id="@+id/image_2"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:src="@mipmap/time"
+            android:layout_below="@id/image_1"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_2"
+            android:layout_alignTop="@+id/image_2"
+            android:text="时间"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/image_3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/place"
+            android:layout_below="@+id/image_2"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/text_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_3"
+            android:layout_alignTop="@+id/image_3"
+            android:text="时间"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+        <TextView
+            android:id="@+id/text_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:text="3天"
+            android:textColor="#000"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">工大小精灵</string>
+    <string-array name="cj_spinner">
+        <item>显示所有成绩</item>
+        <item>2020秋季学期</item>
+        <item>2020春季学期</item>
+        <item>2019秋季学期</item>
+        <item>2019春季学期</item>
+        <item>2018秋季学期</item>
+        <item>2018春季学期</item>
+        <item>2017秋季学期</item>
+        <item>2017春季学期</item>
+        <item>2016秋季学期</item>
+        <item>2016春季学期</item>
+    </string-array>
+    <string-array name="left">
+        <item>关于作者</item>
+        <item>关于作者</item>
+        <item>关于作者</item>
+        <item>分享软件</item>
+    </string-array>
+    <string-array name="room">
+        <item>校本部</item>
+        <item>校本部北</item>
+        <item>葫芦岛</item>
+
+    </string-array>
+    <string-array name="zhou_spinner">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+
+    </string-array>
+    <string-array name="day_spinner">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    </string-array>
+</resources>

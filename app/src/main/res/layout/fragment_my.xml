@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#362DFFE6">
+<Button
+    android:id="@+id/my_btn_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:text="意见反馈"
+    android:background="#B46579DF"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="诚朴求是"
+        android:gravity="start"
+        android:padding="60dp"
+        android:textSize="50sp"
+        android:textColor="#2B7597"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="博学笃行"
+        android:gravity="bottom"
+        android:padding="60dp"
+        android:textSize="50sp"
+        android:textColor="#2B7597"
+        />
+
+</LinearLayout>
+</LinearLayout>

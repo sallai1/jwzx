@@ -126,8 +126,8 @@ public class MainActivity extends AppCompatActivity {
 
             }else if (msg.what==updata){
                 String updataweb =  msg.getData().getString("updata");
-                String edition=  updataweb.substring(updataweb.indexOf("1")+1,updataweb.indexOf("2")).trim();
-                final String info = updataweb.substring(updataweb.indexOf("2")+1);
+                String edition=  updataweb.substring(updataweb.indexOf("z1")+2,updataweb.indexOf("z2")).trim();
+                final String info = updataweb.substring(updataweb.indexOf("z2")+2)
                 Log.i("tag",edition);
 //如有更新弹出对话框
 

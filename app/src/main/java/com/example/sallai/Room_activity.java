@@ -52,6 +52,7 @@ public class Room_activity extends AppCompatActivity {
               //  String[] dataarray = data.substring(data.indexOf("<tr style="), data.lastIndexOf("</table></td>")).split("</table></td>");
               //  StringBuffer stringBuffer = new StringBuffer();
                // int x = 0;
+
                 List<Map<String, Object>> mapList = new ArrayList<Map<String, Object>>();
                 try
                 {
@@ -62,12 +63,13 @@ public class Room_activity extends AppCompatActivity {
                         JSONObject jsonObject1 = user.optJSONObject(t);
                         Log.i("tag",jsonObject1.optString("name"));
                         JSONArray jsonArray =jsonObject1.optJSONArray("array1");
+                        JSONArray jsonArray1 = jsonArray.optJSONArray(Integer.valueOf(sp4.getSelectedItem().toString())-1);
                             Map<String, Object> map = new HashMap<String, Object>();
                             //教室状态图标
 
                             for (int j = 0; j < jsonArray.length(); j++) {
 
-                                if (jsonArray.optInt(j)==0) {
+                                if (jsonArray1.optInt(j)==0) {
                                     map.put(Integer.toString(j), R.mipmap.kong);//空
                                 } else {
                                     map.put(Integer.toString(j), R.mipmap.zhan);//占

@@ -310,7 +310,7 @@ public class Room_activity extends AppCompatActivity {
         new  Thread(new Runnable() {
             @Override
             public void run() {
-                String webdata = HTTP.internet(2,jss,"http://sallai.mao2234.cn/jwzx/room/room.php");
+                String webdata = HTTP.internet(2,jss,"http://s3411982.bnana.top/wx_room/room.php");
                 Message message = new Message();
                 if(webdata.indexOf("user")!=-1){
                     Bundle bundle= new Bundle();

@@ -38,7 +38,7 @@ public class Fragment_gg  extends Fragment {
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         web = view.findViewById(R.id.web_1);
-        web.loadUrl("http://sallai.mao2234.cn/jwzx/jwgg.php");
+        web.loadUrl("http://s3411982.bnana.top/wx_room/jwgg.php");
         String ua = web.getSettings().getUserAgentString();
         web.getSettings().setUserAgentString("Mozilla/5.0 (Linux; Android 5.1; MZ-m1 metal Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0");
         web.getSettings().setSupportZoom(true);
